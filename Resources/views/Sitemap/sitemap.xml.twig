@@ -10,7 +10,7 @@
                 {% if url.priority %}<priority>{{ url.priority }}</priority>{% endif %}
                 {% if url.imageloc %}
                     <image:image>
-                        <image:loc>{{ asset(url.imageloc, 'versioned') }}</image:loc>
+                        <image:loc>{{ asset(url.imageloc) }}</image:loc>
                         {% if url.imagetitle %}<image:title>{{ url.imagetitle }}</image:title>{% endif %}
                     </image:image>
                 {% endif %}
